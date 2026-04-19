@@ -1,0 +1,667 @@
+=== GeneratedProject ===
+Generated on: 2026-04-18T17:21:43.500Z
+Package Structure: {
+  "com.generated.model": [
+    "User",
+    "Profile",
+    "Support",
+    "Promotion",
+    "Financing",
+    "Order",
+    "Configuration",
+    "ShoppingCart",
+    "Shipping",
+    "Payment",
+    "Invoice",
+    "Product"
+  ]
+}
+
+
+==================================================
+FILE: User.java
+==================================================
+package com.generated.model;
+
+public class User
+{
+
+    // Attributes
+    public String email;
+    public String credential;
+
+    // Default constructor
+    public User() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public User(String email, String credential) {
+        this.email = email;
+        this.credential = credential;
+    }
+
+    // Getters and Setters
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getCredential() {
+        return credential;
+    }
+
+    public void setCredential(String credential) {
+        this.credential = credential;
+    }
+
+    // Methods
+    public void createProfile() {
+        // TODO: Implement method logic
+    }
+
+    public void updateProfile() {
+        // TODO: Implement method logic
+    }
+
+    public void authenticate() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Profile.java
+==================================================
+package com.generated.model;
+
+public class Profile
+{
+
+    // Attributes
+    private String activeOrders;
+    private String completedOrders;
+    private String frequentSearches;
+
+    // Default constructor
+    public Profile() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Profile(String activeOrders, String completedOrders, String frequentSearches) {
+        this.activeOrders = activeOrders;
+        this.completedOrders = completedOrders;
+        this.frequentSearches = frequentSearches;
+    }
+
+    // Getters and Setters
+    public String getActiveorders() {
+        return activeOrders;
+    }
+
+    public void setActiveorders(String activeOrders) {
+        this.activeOrders = activeOrders;
+    }
+
+    public String getCompletedorders() {
+        return completedOrders;
+    }
+
+    public void setCompletedorders(String completedOrders) {
+        this.completedOrders = completedOrders;
+    }
+
+    public String getFrequentsearches() {
+        return frequentSearches;
+    }
+
+    public void setFrequentsearches(String frequentSearches) {
+        this.frequentSearches = frequentSearches;
+    }
+
+    // Methods
+    public void viewOrders() {
+        // TODO: Implement method logic
+    }
+
+    public void selectOrder() {
+        // TODO: Implement method logic
+    }
+
+    public void viewOrderDetails() {
+        // TODO: Implement method logic
+    }
+
+    public void registerNewsletter() {
+        // TODO: Implement method logic
+    }
+
+    public void registerSurvey() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Support.java
+==================================================
+package com.generated.model;
+
+public class Support
+{
+
+    // Attributes
+    private String customerInfo;
+    private String productInfo;
+    private String type;
+    private String contactNumbers;
+
+    // Default constructor
+    public Support() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Support(String customerInfo, String productInfo, String type, String contactNumbers) {
+        this.customerInfo = customerInfo;
+        this.productInfo = productInfo;
+        this.type = type;
+        this.contactNumbers = contactNumbers;
+    }
+
+    // Getters and Setters
+    public String getCustomerinfo() {
+        return customerInfo;
+    }
+
+    public void setCustomerinfo(String customerInfo) {
+        this.customerInfo = customerInfo;
+    }
+
+    public String getProductinfo() {
+        return productInfo;
+    }
+
+    public void setProductinfo(String productInfo) {
+        this.productInfo = productInfo;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getContactnumbers() {
+        return contactNumbers;
+    }
+
+    public void setContactnumbers(String contactNumbers) {
+        this.contactNumbers = contactNumbers;
+    }
+
+    // Methods
+    public void selectType() {
+        // TODO: Implement method logic
+    }
+
+    public void enterCustomerInfo() {
+        // TODO: Implement method logic
+    }
+
+    public void enterProductInfo() {
+        // TODO: Implement method logic
+    }
+
+    public void displayProducts() {
+        // TODO: Implement method logic
+    }
+
+    public void displayHelp() {
+        // TODO: Implement method logic
+    }
+
+    public void displayFAQ() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Promotion.java
+==================================================
+package com.generated.model;
+
+public class Promotion
+{
+
+    // Default constructor
+    public Promotion() {
+        // TODO: Initialize default values
+    }
+    // Methods
+    public void select() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Financing.java
+==================================================
+package com.generated.model;
+
+public class Financing
+{
+
+    // Attributes
+    public String options;
+
+    // Default constructor
+    public Financing() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Financing(String options) {
+        this.options = options;
+    }
+
+    // Getters and Setters
+    public String getOptions() {
+        return options;
+    }
+
+    public void setOptions(String options) {
+        this.options = options;
+    }
+
+    // Methods
+    public void selectOption() {
+        // TODO: Implement method logic
+    }
+
+    public void notifyRequest() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Order.java
+==================================================
+package com.generated.model;
+
+public class Order
+{
+
+    // Attributes
+    private String orderInfo;
+    private String trackingInfo;
+    private String paymentInfo;
+    private String shippingCharges;
+    private String shippingDuration;
+
+    // Default constructor
+    public Order() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Order(String orderInfo, String trackingInfo, String paymentInfo, String shippingCharges, String shippingDuration) {
+        this.orderInfo = orderInfo;
+        this.trackingInfo = trackingInfo;
+        this.paymentInfo = paymentInfo;
+        this.shippingCharges = shippingCharges;
+        this.shippingDuration = shippingDuration;
+    }
+
+    // Getters and Setters
+    public String getOrderinfo() {
+        return orderInfo;
+    }
+
+    public void setOrderinfo(String orderInfo) {
+        this.orderInfo = orderInfo;
+    }
+
+    public String getTrackinginfo() {
+        return trackingInfo;
+    }
+
+    public void setTrackinginfo(String trackingInfo) {
+        this.trackingInfo = trackingInfo;
+    }
+
+    public String getPaymentinfo() {
+        return paymentInfo;
+    }
+
+    public void setPaymentinfo(String paymentInfo) {
+        this.paymentInfo = paymentInfo;
+    }
+
+    public String getShippingcharges() {
+        return shippingCharges;
+    }
+
+    public void setShippingcharges(String shippingCharges) {
+        this.shippingCharges = shippingCharges;
+    }
+
+    public String getShippingduration() {
+        return shippingDuration;
+    }
+
+    public void setShippingduration(String shippingDuration) {
+        this.shippingDuration = shippingDuration;
+    }
+
+    // Methods
+    public void confirm() {
+        // TODO: Implement method logic
+    }
+
+    public void cancel() {
+        // TODO: Implement method logic
+    }
+
+    public void changeShipping() {
+        // TODO: Implement method logic
+    }
+
+    public void changePayment() {
+        // TODO: Implement method logic
+    }
+
+    public void track() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Configuration.java
+==================================================
+package com.generated.model;
+
+public class Configuration
+{
+
+    // Default constructor
+    public Configuration() {
+        // TODO: Initialize default values
+    }
+    // Methods
+    public void selectProduct() {
+        // TODO: Implement method logic
+    }
+
+    public void addComponent() {
+        // TODO: Implement method logic
+    }
+
+    public void notifyConflict() {
+        // TODO: Implement method logic
+    }
+
+    public void updateConfig() {
+        // TODO: Implement method logic
+    }
+
+    public void confirmConfig() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: ShoppingCart.java
+==================================================
+package com.generated.model;
+
+public class ShoppingCart
+{
+
+    // Attributes
+    private String products;
+
+    // Default constructor
+    public ShoppingCart() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public ShoppingCart(String products) {
+        this.products = products;
+    }
+
+    // Getters and Setters
+    public String getProducts() {
+        return products;
+    }
+
+    public void setProducts(String products) {
+        this.products = products;
+    }
+
+    // Methods
+    public void addProduct() {
+        // TODO: Implement method logic
+    }
+
+    public void removeProduct() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Shipping.java
+==================================================
+package com.generated.model;
+
+public class Shipping
+{
+
+    // Attributes
+    private String method;
+    private String info;
+    private String options;
+
+    // Default constructor
+    public Shipping() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Shipping(String method, String info, String options) {
+        this.method = method;
+        this.info = info;
+        this.options = options;
+    }
+
+    // Getters and Setters
+    public String getMethod() {
+        return method;
+    }
+
+    public void setMethod(String method) {
+        this.method = method;
+    }
+
+    public String getInfo() {
+        return info;
+    }
+
+    public void setInfo(String info) {
+        this.info = info;
+    }
+
+    public String getOptions() {
+        return options;
+    }
+
+    public void setOptions(String options) {
+        this.options = options;
+    }
+
+    // Methods
+    public void selectMethod() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Payment.java
+==================================================
+package com.generated.model;
+
+public class Payment
+{
+
+    // Attributes
+    private String method;
+    private String info;
+    private String creditCardNo;
+
+    // Default constructor
+    public Payment() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Payment(String method, String info, String creditCardNo) {
+        this.method = method;
+        this.info = info;
+        this.creditCardNo = creditCardNo;
+    }
+
+    // Getters and Setters
+    public String getMethod() {
+        return method;
+    }
+
+    public void setMethod(String method) {
+        this.method = method;
+    }
+
+    public String getInfo() {
+        return info;
+    }
+
+    public void setInfo(String info) {
+        this.info = info;
+    }
+
+    public String getCreditcardno() {
+        return creditCardNo;
+    }
+
+    public void setCreditcardno(String creditCardNo) {
+        this.creditCardNo = creditCardNo;
+    }
+
+    // Methods
+    public void selectMethod() {
+        // TODO: Implement method logic
+    }
+
+    public void enterInfo() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Invoice.java
+==================================================
+package com.generated.model;
+
+public class Invoice
+{
+
+    // Default constructor
+    public Invoice() {
+        // TODO: Initialize default values
+    }
+    // Methods
+    public void display() {
+        // TODO: Implement method logic
+    }
+
+    public void print() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Product.java
+==================================================
+package com.generated.model;
+
+public class Product
+{
+
+    // Attributes
+    private String image;
+    private String categorization;
+
+    // Default constructor
+    public Product() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Product(String image, String categorization) {
+        this.image = image;
+        this.categorization = categorization;
+    }
+
+    // Getters and Setters
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getCategorization() {
+        return categorization;
+    }
+
+    public void setCategorization(String categorization) {
+        this.categorization = categorization;
+    }
+
+    // Methods
+    public void displayDetails() {
+        // TODO: Implement method logic
+    }
+
+    public void browse() {
+        // TODO: Implement method logic
+    }
+
+    public void displayReviews() {
+        // TODO: Implement method logic
+    }
+
+    public void enterReview() {
+        // TODO: Implement method logic
+    }
+
+    public void enterRating() {
+        // TODO: Implement method logic
+    }
+
+}

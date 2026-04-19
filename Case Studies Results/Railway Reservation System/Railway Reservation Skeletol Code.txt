@@ -1,0 +1,407 @@
+=== GeneratedProject ===
+Generated on: 2026-04-19T07:09:01.972Z
+Package Structure: {
+  "com.generated.model": [
+    "Customer",
+    "HelpFacility",
+    "Admin",
+    "Reservation",
+    "Train"
+  ]
+}
+
+
+==================================================
+FILE: Customer.java
+==================================================
+package com.generated.model;
+
+public class Customer
+{
+
+    // Attributes
+    private String loginId;
+    private String password;
+    private String sourceStation;
+    private String destinationStation;
+    private String date;
+    private String typeOfTrain;
+    private String reservationNumber;
+    private String creditCardNumber;
+    private String cardholderName;
+    private String creditCardExpirationDate;
+
+    // Default constructor
+    public Customer() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Customer(String loginId, String password, String sourceStation, String destinationStation, String date, String typeOfTrain, String reservationNumber, String creditCardNumber, String cardholderName, String creditCardExpirationDate) {
+        this.loginId = loginId;
+        this.password = password;
+        this.sourceStation = sourceStation;
+        this.destinationStation = destinationStation;
+        this.date = date;
+        this.typeOfTrain = typeOfTrain;
+        this.reservationNumber = reservationNumber;
+        this.creditCardNumber = creditCardNumber;
+        this.cardholderName = cardholderName;
+        this.creditCardExpirationDate = creditCardExpirationDate;
+    }
+
+    // Getters and Setters
+    public String getLoginid() {
+        return loginId;
+    }
+
+    public void setLoginid(String loginId) {
+        this.loginId = loginId;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getSourcestation() {
+        return sourceStation;
+    }
+
+    public void setSourcestation(String sourceStation) {
+        this.sourceStation = sourceStation;
+    }
+
+    public String getDestinationstation() {
+        return destinationStation;
+    }
+
+    public void setDestinationstation(String destinationStation) {
+        this.destinationStation = destinationStation;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getTypeoftrain() {
+        return typeOfTrain;
+    }
+
+    public void setTypeoftrain(String typeOfTrain) {
+        this.typeOfTrain = typeOfTrain;
+    }
+
+    public String getReservationnumber() {
+        return reservationNumber;
+    }
+
+    public void setReservationnumber(String reservationNumber) {
+        this.reservationNumber = reservationNumber;
+    }
+
+    public String getCreditcardnumber() {
+        return creditCardNumber;
+    }
+
+    public void setCreditcardnumber(String creditCardNumber) {
+        this.creditCardNumber = creditCardNumber;
+    }
+
+    public String getCardholdername() {
+        return cardholderName;
+    }
+
+    public void setCardholdername(String cardholderName) {
+        this.cardholderName = cardholderName;
+    }
+
+    public String getCreditcardexpirationdate() {
+        return creditCardExpirationDate;
+    }
+
+    public void setCreditcardexpirationdate(String creditCardExpirationDate) {
+        this.creditCardExpirationDate = creditCardExpirationDate;
+    }
+
+    // Methods
+    public void clickLoginButton() {
+        // TODO: Implement method logic
+    }
+
+    public void enterLoginIdAndPassword() {
+        // TODO: Implement method logic
+    }
+
+    public void clickConfirmButton() {
+        // TODO: Implement method logic
+    }
+
+    public void enterSourceStation() {
+        // TODO: Implement method logic
+    }
+
+    public void enterDestinationStation() {
+        // TODO: Implement method logic
+    }
+
+    public void enterDate() {
+        // TODO: Implement method logic
+    }
+
+    public void enterTypeOfTrain() {
+        // TODO: Implement method logic
+    }
+
+    public void clickSearch() {
+        // TODO: Implement method logic
+    }
+
+    public void selectPurchaseTicket() {
+        // TODO: Implement method logic
+    }
+
+    public void enterReservationNumber() {
+        // TODO: Implement method logic
+    }
+
+    public void clickSubmitButton() {
+        // TODO: Implement method logic
+    }
+
+    public void enterCreditCardDetails() {
+        // TODO: Implement method logic
+    }
+
+    public void clickCancelReservation() {
+        // TODO: Implement method logic
+    }
+
+    public void selectProcessCancellation() {
+        // TODO: Implement method logic
+    }
+
+    public void clickHelpFacility() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: HelpFacility.java
+==================================================
+package com.generated.model;
+
+public class HelpFacility
+{
+
+    // Attributes
+    private List<String> instructionsList;
+
+    // Default constructor
+    public HelpFacility() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public HelpFacility(List<String> instructionsList) {
+        this.instructionsList = instructionsList;
+    }
+
+    // Getters and Setters
+    public List<String> getInstructionslist() {
+        return instructionsList;
+    }
+
+    public void setInstructionslist(List<String> instructionsList) {
+        this.instructionsList = instructionsList;
+    }
+
+    // Methods
+    public void showInstructions() {
+        // TODO: Implement method logic
+    }
+
+    public void showHowToFillInformation() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Admin.java
+==================================================
+package com.generated.model;
+
+public class Admin
+{
+
+    // Attributes
+    private String loginId;
+    private String password;
+
+    // Default constructor
+    public Admin() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Admin(String loginId, String password) {
+        this.loginId = loginId;
+        this.password = password;
+    }
+
+    // Getters and Setters
+    public String getLoginid() {
+        return loginId;
+    }
+
+    public void setLoginid(String loginId) {
+        this.loginId = loginId;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    // Methods
+    public void clickLoginButton() {
+        // TODO: Implement method logic
+    }
+
+    public void enterLoginIdAndPassword() {
+        // TODO: Implement method logic
+    }
+
+    public void clickConfirmButton() {
+        // TODO: Implement method logic
+    }
+
+    public void selectAddTrain() {
+        // TODO: Implement method logic
+    }
+
+    public void selectRemoveTrain() {
+        // TODO: Implement method logic
+    }
+
+    public void fillRequiredInformation() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Reservation.java
+==================================================
+package com.generated.model;
+
+public class Reservation
+{
+
+    // Attributes
+    private String reservationNumber;
+    private String reservationDetails;
+
+    // Default constructor
+    public Reservation() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Reservation(String reservationNumber, String reservationDetails) {
+        this.reservationNumber = reservationNumber;
+        this.reservationDetails = reservationDetails;
+    }
+
+    // Getters and Setters
+    public String getReservationnumber() {
+        return reservationNumber;
+    }
+
+    public void setReservationnumber(String reservationNumber) {
+        this.reservationNumber = reservationNumber;
+    }
+
+    public String getReservationdetails() {
+        return reservationDetails;
+    }
+
+    public void setReservationdetails(String reservationDetails) {
+        this.reservationDetails = reservationDetails;
+    }
+
+}
+
+==================================================
+FILE: Train.java
+==================================================
+package com.generated.model;
+
+public class Train
+{
+
+    // Attributes
+    private String sourceStation;
+    private String destinationStation;
+    private String typeOfTrain;
+    private Double price;
+
+    // Default constructor
+    public Train() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Train(String sourceStation, String destinationStation, String typeOfTrain, Double price) {
+        this.sourceStation = sourceStation;
+        this.destinationStation = destinationStation;
+        this.typeOfTrain = typeOfTrain;
+        this.price = price;
+    }
+
+    // Getters and Setters
+    public String getSourcestation() {
+        return sourceStation;
+    }
+
+    public void setSourcestation(String sourceStation) {
+        this.sourceStation = sourceStation;
+    }
+
+    public String getDestinationstation() {
+        return destinationStation;
+    }
+
+    public void setDestinationstation(String destinationStation) {
+        this.destinationStation = destinationStation;
+    }
+
+    public String getTypeoftrain() {
+        return typeOfTrain;
+    }
+
+    public void setTypeoftrain(String typeOfTrain) {
+        this.typeOfTrain = typeOfTrain;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+}

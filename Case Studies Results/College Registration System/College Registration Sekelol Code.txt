@@ -1,0 +1,321 @@
+=== GeneratedProject ===
+Generated on: 2026-04-18T17:19:00.436Z
+Package Structure: {
+  "com.generated.model": [
+    "Student",
+    "Administrator",
+    "Paper",
+    "Report"
+  ]
+}
+
+
+==================================================
+FILE: Student.java
+==================================================
+package com.generated.model;
+
+public class Student
+{
+
+    // Attributes
+    private String loginId;
+    private String password;
+    private String name;
+    private String rollNumber;
+
+    // Default constructor
+    public Student() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Student(String loginId, String password, String name, String rollNumber) {
+        this.loginId = loginId;
+        this.password = password;
+        this.name = name;
+        this.rollNumber = rollNumber;
+    }
+
+    // Getters and Setters
+    public String getLoginid() {
+        return loginId;
+    }
+
+    public void setLoginid(String loginId) {
+        this.loginId = loginId;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getRollnumber() {
+        return rollNumber;
+    }
+
+    public void setRollnumber(String rollNumber) {
+        this.rollNumber = rollNumber;
+    }
+
+    // Methods
+    public void register() {
+        // TODO: Implement method logic
+    }
+
+    public void enterDetails() {
+        // TODO: Implement method logic
+    }
+
+    public void validateDetails() {
+        // TODO: Implement method logic
+    }
+
+    public void reenterDetails() {
+        // TODO: Implement method logic
+    }
+
+    public void selectSubject() {
+        // TODO: Implement method logic
+    }
+
+    public void viewPaper() {
+        // TODO: Implement method logic
+    }
+
+    public void downloadPaper() {
+        // TODO: Implement method logic
+    }
+
+    public void viewReports() {
+        // TODO: Implement method logic
+    }
+
+    public void enterRollNumber() {
+        // TODO: Implement method logic
+    }
+
+    public void downloadReport() {
+        // TODO: Implement method logic
+    }
+
+    public void tryAgain() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Administrator.java
+==================================================
+package com.generated.model;
+
+public class Administrator
+{
+
+    // Attributes
+    private String loginId;
+    private String password;
+
+    // Default constructor
+    public Administrator() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Administrator(String loginId, String password) {
+        this.loginId = loginId;
+        this.password = password;
+    }
+
+    // Getters and Setters
+    public String getLoginid() {
+        return loginId;
+    }
+
+    public void setLoginid(String loginId) {
+        this.loginId = loginId;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    // Methods
+    public void login() {
+        // TODO: Implement method logic
+    }
+
+    public void manageExamOptions() {
+        // TODO: Implement method logic
+    }
+
+    public void addPaper() {
+        // TODO: Implement method logic
+    }
+
+    public void removePaper() {
+        // TODO: Implement method logic
+    }
+
+    public void uploadReport() {
+        // TODO: Implement method logic
+    }
+
+    public void verifyPaper() {
+        // TODO: Implement method logic
+    }
+
+    public void acknowledgeUpload() {
+        // TODO: Implement method logic
+    }
+
+    public void acknowledgeRemove() {
+        // TODO: Implement method logic
+    }
+
+    public void acknowledgeReport() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Paper.java
+==================================================
+package com.generated.model;
+
+public class Paper
+{
+
+    // Attributes
+    private String subject;
+    private String fileName;
+
+    // Default constructor
+    public Paper() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Paper(String subject, String fileName) {
+        this.subject = subject;
+        this.fileName = fileName;
+    }
+
+    // Getters and Setters
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public String getFilename() {
+        return fileName;
+    }
+
+    public void setFilename(String fileName) {
+        this.fileName = fileName;
+    }
+
+    // Methods
+    public void upload() {
+        // TODO: Implement method logic
+    }
+
+    public void verify() {
+        // TODO: Implement method logic
+    }
+
+    public void remove() {
+        // TODO: Implement method logic
+    }
+
+    public void show() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Report.java
+==================================================
+package com.generated.model;
+
+public class Report
+{
+
+    // Attributes
+    private String name;
+    private String rollNumber;
+    private String classWise;
+
+    // Default constructor
+    public Report() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Report(String name, String rollNumber, String classWise) {
+        this.name = name;
+        this.rollNumber = rollNumber;
+        this.classWise = classWise;
+    }
+
+    // Getters and Setters
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getRollnumber() {
+        return rollNumber;
+    }
+
+    public void setRollnumber(String rollNumber) {
+        this.rollNumber = rollNumber;
+    }
+
+    public String getClasswise() {
+        return classWise;
+    }
+
+    public void setClasswise(String classWise) {
+        this.classWise = classWise;
+    }
+
+    // Methods
+    public void upload() {
+        // TODO: Implement method logic
+    }
+
+    public void verify() {
+        // TODO: Implement method logic
+    }
+
+    public void show() {
+        // TODO: Implement method logic
+    }
+
+}

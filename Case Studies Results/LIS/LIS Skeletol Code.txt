@@ -1,0 +1,477 @@
+=== GeneratedProject ===
+Generated on: 2026-04-18T17:26:31.036Z
+Package Structure: {
+  "com.generated.model": [
+    "Staff",
+    "Branch",
+    "Administrator",
+    "Report",
+    "Item",
+    "Patron",
+    "ReportTemplate",
+    "Transaction"
+  ]
+}
+
+
+==================================================
+FILE: Staff.java
+==================================================
+package com.generated.model;
+
+public class Staff
+{
+
+    // Default constructor
+    public Staff() {
+        // TODO: Initialize default values
+    }
+    // Methods
+    public void designQuery() {
+        // TODO: Implement method logic
+    }
+
+    public void runReport() {
+        // TODO: Implement method logic
+    }
+
+    public void modifyReportTemplate() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Branch.java
+==================================================
+package com.generated.model;
+
+public class Branch
+{
+
+    // Attributes
+    private String name;
+    private String location;
+    private String capacity;
+
+    // Default constructor
+    public Branch() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Branch(String name, String location, String capacity) {
+        this.name = name;
+        this.location = location;
+        this.capacity = capacity;
+    }
+
+    // Getters and Setters
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(String capacity) {
+        this.capacity = capacity;
+    }
+
+    // Methods
+    public void getCapacity() {
+        // TODO: Implement method logic
+    }
+
+    public void generateBranchReport() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Administrator.java
+==================================================
+package com.generated.model;
+
+public class Administrator
+{
+
+    // Default constructor
+    public Administrator() {
+        // TODO: Initialize default values
+    }
+    // Methods
+    public void createReportTemplate() {
+        // TODO: Implement method logic
+    }
+
+    public void limitFiltersAndDisplayFields() {
+        // TODO: Implement method logic
+    }
+
+    public void controlStaffAccess() {
+        // TODO: Implement method logic
+    }
+
+    public void createSharedFolder() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Report.java
+==================================================
+package com.generated.model;
+
+public class Report
+{
+
+    // Attributes
+    private String reportTemplate;
+    private String filters;
+    private String displayFields;
+
+    // Default constructor
+    public Report() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Report(String reportTemplate, String filters, String displayFields) {
+        this.reportTemplate = reportTemplate;
+        this.filters = filters;
+        this.displayFields = displayFields;
+    }
+
+    // Getters and Setters
+    public String getReporttemplate() {
+        return reportTemplate;
+    }
+
+    public void setReporttemplate(String reportTemplate) {
+        this.reportTemplate = reportTemplate;
+    }
+
+    public String getFilters() {
+        return filters;
+    }
+
+    public void setFilters(String filters) {
+        this.filters = filters;
+    }
+
+    public String getDisplayfields() {
+        return displayFields;
+    }
+
+    public void setDisplayfields(String displayFields) {
+        this.displayFields = displayFields;
+    }
+
+    // Methods
+    public void generateReport() {
+        // TODO: Implement method logic
+    }
+
+    public void customizeReport() {
+        // TODO: Implement method logic
+    }
+
+    public void saveReport() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Item.java
+==================================================
+package com.generated.model;
+
+public class Item
+{
+
+    // Attributes
+    private String status;
+    private String type;
+    private String value;
+    private String location;
+    private String inTransit;
+
+    // Default constructor
+    public Item() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Item(String status, String type, String value, String location, String inTransit) {
+        this.status = status;
+        this.type = type;
+        this.value = value;
+        this.location = location;
+        this.inTransit = inTransit;
+    }
+
+    // Getters and Setters
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getIntransit() {
+        return inTransit;
+    }
+
+    public void setIntransit(String inTransit) {
+        this.inTransit = inTransit;
+    }
+
+    // Methods
+    public void updateStatus() {
+        // TODO: Implement method logic
+    }
+
+    public void trackTransit() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Patron.java
+==================================================
+package com.generated.model;
+
+public class Patron
+{
+
+    // Attributes
+    private String transactionHistory;
+    private String checkOuts;
+    private String holdsPlaced;
+    private String activityStatus;
+
+    // Default constructor
+    public Patron() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Patron(String transactionHistory, String checkOuts, String holdsPlaced, String activityStatus) {
+        this.transactionHistory = transactionHistory;
+        this.checkOuts = checkOuts;
+        this.holdsPlaced = holdsPlaced;
+        this.activityStatus = activityStatus;
+    }
+
+    // Getters and Setters
+    public String getTransactionhistory() {
+        return transactionHistory;
+    }
+
+    public void setTransactionhistory(String transactionHistory) {
+        this.transactionHistory = transactionHistory;
+    }
+
+    public String getCheckouts() {
+        return checkOuts;
+    }
+
+    public void setCheckouts(String checkOuts) {
+        this.checkOuts = checkOuts;
+    }
+
+    public String getHoldsplaced() {
+        return holdsPlaced;
+    }
+
+    public void setHoldsplaced(String holdsPlaced) {
+        this.holdsPlaced = holdsPlaced;
+    }
+
+    public String getActivitystatus() {
+        return activityStatus;
+    }
+
+    public void setActivitystatus(String activityStatus) {
+        this.activityStatus = activityStatus;
+    }
+
+    // Methods
+    public void getCirculationStats() {
+        // TODO: Implement method logic
+    }
+
+    public void getTransactionDetails() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: ReportTemplate.java
+==================================================
+package com.generated.model;
+
+public class ReportTemplate
+{
+
+    // Attributes
+    private String predefinedFilters;
+    private String restrictedFields;
+
+    // Default constructor
+    public ReportTemplate() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public ReportTemplate(String predefinedFilters, String restrictedFields) {
+        this.predefinedFilters = predefinedFilters;
+        this.restrictedFields = restrictedFields;
+    }
+
+    // Getters and Setters
+    public String getPredefinedfilters() {
+        return predefinedFilters;
+    }
+
+    public void setPredefinedfilters(String predefinedFilters) {
+        this.predefinedFilters = predefinedFilters;
+    }
+
+    public String getRestrictedfields() {
+        return restrictedFields;
+    }
+
+    public void setRestrictedfields(String restrictedFields) {
+        this.restrictedFields = restrictedFields;
+    }
+
+    // Methods
+    public void createTemplate() {
+        // TODO: Implement method logic
+    }
+
+    public void cloneTemplate() {
+        // TODO: Implement method logic
+    }
+
+    public void limitTemplateModification() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Transaction.java
+==================================================
+package com.generated.model;
+
+public class Transaction
+{
+
+    // Attributes
+    private String type;
+    private String date;
+    private String item;
+    private String patron;
+
+    // Default constructor
+    public Transaction() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Transaction(String type, String date, String item, String patron) {
+        this.type = type;
+        this.date = date;
+        this.item = item;
+        this.patron = patron;
+    }
+
+    // Getters and Setters
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getItem() {
+        return item;
+    }
+
+    public void setItem(String item) {
+        this.item = item;
+    }
+
+    public String getPatron() {
+        return patron;
+    }
+
+    public void setPatron(String patron) {
+        this.patron = patron;
+    }
+
+    // Methods
+    public void recordTransaction() {
+        // TODO: Implement method logic
+    }
+
+    public void generateTransactionReport() {
+        // TODO: Implement method logic
+    }
+
+}

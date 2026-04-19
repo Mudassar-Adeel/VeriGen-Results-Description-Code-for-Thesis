@@ -1,0 +1,235 @@
+=== GeneratedProject ===
+Generated on: 2026-04-18T17:28:40.687Z
+Package Structure: {
+  "com.generated.model": [
+    "Customer",
+    "Order",
+    "Book",
+    "ShoppingCart"
+  ]
+}
+
+
+==================================================
+FILE: Customer.java
+==================================================
+package com.generated.model;
+
+public class Customer
+{
+
+    // Attributes
+    private String loginId;
+    private String password;
+
+    // Default constructor
+    public Customer() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Customer(String loginId, String password) {
+        this.loginId = loginId;
+        this.password = password;
+    }
+
+    // Getters and Setters
+    public String getLoginid() {
+        return loginId;
+    }
+
+    public void setLoginid(String loginId) {
+        this.loginId = loginId;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    // Methods
+    public void register() {
+        // TODO: Implement method logic
+    }
+
+    public void login() {
+        // TODO: Implement method logic
+    }
+
+    public void searchBook() {
+        // TODO: Implement method logic
+    }
+
+    public void addToShoppingCart() {
+        // TODO: Implement method logic
+    }
+
+    public void sellUsedBooks() {
+        // TODO: Implement method logic
+    }
+
+    public void reviewBook() {
+        // TODO: Implement method logic
+    }
+
+    public void checkout() {
+        // TODO: Implement method logic
+    }
+
+    public void downloadReceipt() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Order.java
+==================================================
+package com.generated.model;
+
+public class Order
+{
+
+    // Attributes
+    private List<Book> bookList;
+
+    // Default constructor
+    public Order() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Order(List<Book> bookList) {
+        this.bookList = bookList;
+    }
+
+    // Getters and Setters
+    public List<Book> getBooklist() {
+        return bookList;
+    }
+
+    public void setBooklist(List<Book> bookList) {
+        this.bookList = bookList;
+    }
+
+    // Methods
+    public void checkOrder() {
+        // TODO: Implement method logic
+    }
+
+    public void proceed() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Book.java
+==================================================
+package com.generated.model;
+
+public class Book
+{
+
+    // Attributes
+    private String name;
+    private String publication;
+    private String type;
+    private Double overallRating;
+
+    // Default constructor
+    public Book() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Book(String name, String publication, String type, Double overallRating) {
+        this.name = name;
+        this.publication = publication;
+        this.type = type;
+        this.overallRating = overallRating;
+    }
+
+    // Getters and Setters
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPublication() {
+        return publication;
+    }
+
+    public void setPublication(String publication) {
+        this.publication = publication;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public Double getOverallrating() {
+        return overallRating;
+    }
+
+    public void setOverallrating(Double overallRating) {
+        this.overallRating = overallRating;
+    }
+
+    // Methods
+    public void displayBookDetails() {
+        // TODO: Implement method logic
+    }
+
+    public void updateRating() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: ShoppingCart.java
+==================================================
+package com.generated.model;
+
+public class ShoppingCart
+{
+
+    // Attributes
+    private List<Book> cartItems;
+
+    // Default constructor
+    public ShoppingCart() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public ShoppingCart(List<Book> cartItems) {
+        this.cartItems = cartItems;
+    }
+
+    // Getters and Setters
+    public List<Book> getCartitems() {
+        return cartItems;
+    }
+
+    public void setCartitems(List<Book> cartItems) {
+        this.cartItems = cartItems;
+    }
+
+    // Methods
+    public void addToCart() {
+        // TODO: Implement method logic
+    }
+
+}

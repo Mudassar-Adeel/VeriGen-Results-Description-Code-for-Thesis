@@ -1,0 +1,471 @@
+=== GeneratedProject ===
+Generated on: 2026-01-06T13:02:54.864Z
+Package Structure: {
+  "com.generated.model": [
+    "User",
+    "Humidistat",
+    "Thermostat",
+    "Alarm",
+    "Appliance",
+    "PowerSwitch",
+    "Sensor",
+    "Planner"
+  ]
+}
+
+
+==================================================
+FILE: User.java
+==================================================
+package com.generated.model;
+
+public class User
+{
+
+    // Attributes
+    private String userID;
+    private String device;
+
+    // Default constructor
+    public User() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public User(String userID, String device) {
+        this.userID = userID;
+        this.device = device;
+    }
+
+    // Getters and Setters
+    public String getUserid() {
+        return userID;
+    }
+
+    public void setUserid(String userID) {
+        this.userID = userID;
+    }
+
+    public String getDevice() {
+        return device;
+    }
+
+    public void setDevice(String device) {
+        this.device = device;
+    }
+
+    // Methods
+    public void readTemperature(String position) {
+        // TODO: Implement method logic
+    }
+
+    public void setTemperature(int value) {
+        // TODO: Implement method logic
+    }
+
+    public void readHumidity(String position) {
+        // TODO: Implement method logic
+    }
+
+    public void setHumidity(int value) {
+        // TODO: Implement method logic
+    }
+
+    public void overrideParameters(String parameter, Any value) {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Humidistat.java
+==================================================
+package com.generated.model;
+
+public class Humidistat
+{
+
+    // Attributes
+    private int currentHumidity;
+    private int plannedHumidity;
+    private int manualHumidity;
+
+    // Default constructor
+    public Humidistat() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Humidistat(int currentHumidity, int plannedHumidity, int manualHumidity) {
+        this.currentHumidity = currentHumidity;
+        this.plannedHumidity = plannedHumidity;
+        this.manualHumidity = manualHumidity;
+    }
+
+    // Getters and Setters
+    public int getCurrenthumidity() {
+        return currentHumidity;
+    }
+
+    public void setCurrenthumidity(int currentHumidity) {
+        this.currentHumidity = currentHumidity;
+    }
+
+    public int getPlannedhumidity() {
+        return plannedHumidity;
+    }
+
+    public void setPlannedhumidity(int plannedHumidity) {
+        this.plannedHumidity = plannedHumidity;
+    }
+
+    public int getManualhumidity() {
+        return manualHumidity;
+    }
+
+    public void setManualhumidity(int manualHumidity) {
+        this.manualHumidity = manualHumidity;
+    }
+
+    // Methods
+    public void setHumidity(int value) {
+        // TODO: Implement method logic
+    }
+
+    public void getHumidity() {
+        // TODO: Implement method logic
+    }
+
+    public void rejectToPlanned() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Thermostat.java
+==================================================
+package com.generated.model;
+
+public class Thermostat
+{
+
+    // Attributes
+    private int currentTemperature;
+    private int plannedTemperature;
+    private int manualTemperature;
+
+    // Default constructor
+    public Thermostat() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Thermostat(int currentTemperature, int plannedTemperature, int manualTemperature) {
+        this.currentTemperature = currentTemperature;
+        this.plannedTemperature = plannedTemperature;
+        this.manualTemperature = manualTemperature;
+    }
+
+    // Getters and Setters
+    public int getCurrenttemperature() {
+        return currentTemperature;
+    }
+
+    public void setCurrenttemperature(int currentTemperature) {
+        this.currentTemperature = currentTemperature;
+    }
+
+    public int getPlannedtemperature() {
+        return plannedTemperature;
+    }
+
+    public void setPlannedtemperature(int plannedTemperature) {
+        this.plannedTemperature = plannedTemperature;
+    }
+
+    public int getManualtemperature() {
+        return manualTemperature;
+    }
+
+    public void setManualtemperature(int manualTemperature) {
+        this.manualTemperature = manualTemperature;
+    }
+
+    // Methods
+    public void setTemperature(int value) {
+        // TODO: Implement method logic
+    }
+
+    public void getTemperature() {
+        // TODO: Implement method logic
+    }
+
+    public void rejectToPlanned() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Alarm.java
+==================================================
+package com.generated.model;
+
+public class Alarm
+{
+
+    // Attributes
+    private String <<light or sound>> type;
+    private String status;
+
+    // Default constructor
+    public Alarm() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Alarm(String <<light or sound>> type, String status) {
+        this.type = type;
+        this.status = status;
+    }
+
+    // Getters and Setters
+    public String <<light or sound>> getType() {
+        return type;
+    }
+
+    public void setType(String <<light or sound>> type) {
+        this.type = type;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    // Methods
+    public void activate() {
+        // TODO: Implement method logic
+    }
+
+    public void deactivate() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Appliance.java
+==================================================
+package com.generated.model;
+
+public class Appliance
+{
+
+    // Attributes
+    private String applianceID;
+    private String applianceName;
+
+    // Default constructor
+    public Appliance() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Appliance(String applianceID, String applianceName) {
+        this.applianceID = applianceID;
+        this.applianceName = applianceName;
+    }
+
+    // Getters and Setters
+    public String getApplianceid() {
+        return applianceID;
+    }
+
+    public void setApplianceid(String applianceID) {
+        this.applianceID = applianceID;
+    }
+
+    public String getAppliancename() {
+        return applianceName;
+    }
+
+    public void setAppliancename(String applianceName) {
+        this.applianceName = applianceName;
+    }
+
+    // Methods
+    public void getState() {
+        // TODO: Implement method logic
+    }
+
+    public void changeState(String state) {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: PowerSwitch.java
+==================================================
+package com.generated.model;
+
+public class PowerSwitch
+{
+
+    // Attributes
+    private String switchState;
+    private String plannedState;
+
+    // Default constructor
+    public PowerSwitch() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public PowerSwitch(String switchState, String plannedState) {
+        this.switchState = switchState;
+        this.plannedState = plannedState;
+    }
+
+    // Getters and Setters
+    public String getSwitchstate() {
+        return switchState;
+    }
+
+    public void setSwitchstate(String switchState) {
+        this.switchState = switchState;
+    }
+
+    public String getPlannedstate() {
+        return plannedState;
+    }
+
+    public void setPlannedstate(String plannedState) {
+        this.plannedState = plannedState;
+    }
+
+    // Methods
+    public void getState() {
+        // TODO: Implement method logic
+    }
+
+    public void setState(String state) {
+        // TODO: Implement method logic
+    }
+
+    public void resetToPlanned() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Sensor.java
+==================================================
+package com.generated.model;
+
+public class Sensor
+{
+
+    // Attributes
+    private String sensorID;
+    private String sensorType;
+    private Any savedValue;
+
+    // Default constructor
+    public Sensor() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Sensor(String sensorID, String sensorType, Any savedValue) {
+        this.sensorID = sensorID;
+        this.sensorType = sensorType;
+        this.savedValue = savedValue;
+    }
+
+    // Getters and Setters
+    public String getSensorid() {
+        return sensorID;
+    }
+
+    public void setSensorid(String sensorID) {
+        this.sensorID = sensorID;
+    }
+
+    public String getSensortype() {
+        return sensorType;
+    }
+
+    public void setSensortype(String sensorType) {
+        this.sensorType = sensorType;
+    }
+
+    public Any getSavedvalue() {
+        return savedValue;
+    }
+
+    public void setSavedvalue(Any savedValue) {
+        this.savedValue = savedValue;
+    }
+
+    // Methods
+    public void readValue() {
+        // TODO: Implement method logic
+    }
+
+    public void saveValueToDatabase() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Planner.java
+==================================================
+package com.generated.model;
+
+public class Planner
+{
+
+    // Attributes
+    private Map<String, Any> presetParameters;
+
+    // Default constructor
+    public Planner() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Planner(Map<String, Any> presetParameters) {
+        this.presetParameters = presetParameters;
+    }
+
+    // Getters and Setters
+    public Map<String, Any> getPresetparameters() {
+        return presetParameters;
+    }
+
+    public void setPresetparameters(Map<String, Any> presetParameters) {
+        this.presetParameters = presetParameters;
+    }
+
+    // Methods
+    public void setParameters(Map<String parameters, String Any) {
+        // TODO: Implement method logic
+    }
+
+    public void getParameters() {
+        // TODO: Implement method logic
+    }
+
+    public void generateMonthlyReport() {
+        // TODO: Implement method logic
+    }
+
+}
