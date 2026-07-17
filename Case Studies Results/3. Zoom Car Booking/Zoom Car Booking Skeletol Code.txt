@@ -1,0 +1,445 @@
+=== GeneratedProject ===
+Generated on: 2026-01-06T12:47:01.530Z
+Package Structure: {
+  "com.generated.model": [
+    "User",
+    "Customer",
+    "Admin",
+    "Booking",
+    "PaymentSystem",
+    "Car"
+  ]
+}
+
+
+==================================================
+FILE: User.java
+==================================================
+package com.generated.model;
+
+public class User
+{
+
+    // Attributes
+    private String userId;
+    private String loginId;
+    private String password;
+
+    // Default constructor
+    public User() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public User(String userId, String loginId, String password) {
+        this.userId = userId;
+        this.loginId = loginId;
+        this.password = password;
+    }
+
+    // Getters and Setters
+    public String getUserid() {
+        return userId;
+    }
+
+    public void setUserid(String userId) {
+        this.userId = userId;
+    }
+
+    public String getLoginid() {
+        return loginId;
+    }
+
+    public void setLoginid(String loginId) {
+        this.loginId = loginId;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    // Methods
+    public void login() {
+        // TODO: Implement method logic
+    }
+
+    public void logout() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Customer.java
+==================================================
+package com.generated.model;
+
+public class Customer extends User
+{
+
+    // Attributes
+    private String name;
+    private int age;
+    private int numberOfPassengers;
+
+    // Default constructor
+    public Customer() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Customer(String name, int age, int numberOfPassengers) {
+        this.name = name;
+        this.age = age;
+        this.numberOfPassengers = numberOfPassengers;
+    }
+
+    // Getters and Setters
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getNumberofpassengers() {
+        return numberOfPassengers;
+    }
+
+    public void setNumberofpassengers(int numberOfPassengers) {
+        this.numberOfPassengers = numberOfPassengers;
+    }
+
+    // Methods
+    public void searchCars(String sourceStation, String destinationStation, String carType) {
+        // TODO: Implement method logic
+    }
+
+    public void bookCar(Car car) {
+        // TODO: Implement method logic
+    }
+
+    public void cancelBooking(String bookingId) {
+        // TODO: Implement method logic
+    }
+
+    public void requestHelp(String topic) {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Admin.java
+==================================================
+package com.generated.model;
+
+public class Admin extends User
+{
+
+    // Attributes
+    private String adminId;
+
+    // Default constructor
+    public Admin() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Admin(String adminId) {
+        this.adminId = adminId;
+    }
+
+    // Getters and Setters
+    public String getAdminid() {
+        return adminId;
+    }
+
+    public void setAdminid(String adminId) {
+        this.adminId = adminId;
+    }
+
+    // Methods
+    public void addCar(String carModel, float distanceTravelled, Date dateOfPurchase, String carType) {
+        // TODO: Implement method logic
+    }
+
+    public void removeCar(String carId, String reason) {
+        // TODO: Implement method logic
+    }
+
+    public void manageCars() {
+        // TODO: Implement method logic
+    }
+
+    public void requestHelp(String topic) {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Booking.java
+==================================================
+package com.generated.model;
+
+import java.util.Date;
+
+public class Booking
+{
+
+    // Attributes
+    private String bookingId;
+    private String customerId;
+    private String carId;
+    private Date bookingDate;
+    private String status;
+
+    // Default constructor
+    public Booking() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Booking(String bookingId, String customerId, String carId, Date bookingDate, String status) {
+        this.bookingId = bookingId;
+        this.customerId = customerId;
+        this.carId = carId;
+        this.bookingDate = bookingDate;
+        this.status = status;
+    }
+
+    // Getters and Setters
+    public String getBookingid() {
+        return bookingId;
+    }
+
+    public void setBookingid(String bookingId) {
+        this.bookingId = bookingId;
+    }
+
+    public String getCustomerid() {
+        return customerId;
+    }
+
+    public void setCustomerid(String customerId) {
+        this.customerId = customerId;
+    }
+
+    public String getCarid() {
+        return carId;
+    }
+
+    public void setCarid(String carId) {
+        this.carId = carId;
+    }
+
+    public Date getBookingdate() {
+        return bookingDate;
+    }
+
+    public void setBookingdate(Date bookingDate) {
+        this.bookingDate = bookingDate;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    // Methods
+    public void createBooking() {
+        // TODO: Implement method logic
+    }
+
+    public void cancelBooking(String reason) {
+        // TODO: Implement method logic
+    }
+
+    public void getBookingDetails() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: PaymentSystem.java
+==================================================
+package com.generated.model;
+
+import java.util.Date;
+
+public class PaymentSystem
+{
+
+    // Attributes
+    private String cardNumber;
+    private String cardHolderName;
+    private Date expirationDate;
+
+    // Default constructor
+    public PaymentSystem() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public PaymentSystem(String cardNumber, String cardHolderName, Date expirationDate) {
+        this.cardNumber = cardNumber;
+        this.cardHolderName = cardHolderName;
+        this.expirationDate = expirationDate;
+    }
+
+    // Getters and Setters
+    public String getCardnumber() {
+        return cardNumber;
+    }
+
+    public void setCardnumber(String cardNumber) {
+        this.cardNumber = cardNumber;
+    }
+
+    public String getCardholdername() {
+        return cardHolderName;
+    }
+
+    public void setCardholdername(String cardHolderName) {
+        this.cardHolderName = cardHolderName;
+    }
+
+    public Date getExpirationdate() {
+        return expirationDate;
+    }
+
+    public void setExpirationdate(Date expirationDate) {
+        this.expirationDate = expirationDate;
+    }
+
+    // Methods
+    public void processPayment() {
+        // TODO: Implement method logic
+    }
+
+    public void validatePaymentDetails() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Car.java
+==================================================
+package com.generated.model;
+
+import java.util.Date;
+
+public class Car
+{
+
+    // Attributes
+    private String carId;
+    private String model;
+    private String type;
+    private float distanceTravelled;
+    private Date dateOfPurchase;
+    private boolean isAvailable;
+    private float price;
+
+    // Default constructor
+    public Car() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Car(String carId, String model, String type, float distanceTravelled, Date dateOfPurchase, boolean isAvailable, float price) {
+        this.carId = carId;
+        this.model = model;
+        this.type = type;
+        this.distanceTravelled = distanceTravelled;
+        this.dateOfPurchase = dateOfPurchase;
+        this.isAvailable = isAvailable;
+        this.price = price;
+    }
+
+    // Getters and Setters
+    public String getCarid() {
+        return carId;
+    }
+
+    public void setCarid(String carId) {
+        this.carId = carId;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public float getDistancetravelled() {
+        return distanceTravelled;
+    }
+
+    public void setDistancetravelled(float distanceTravelled) {
+        this.distanceTravelled = distanceTravelled;
+    }
+
+    public Date getDateofpurchase() {
+        return dateOfPurchase;
+    }
+
+    public void setDateofpurchase(Date dateOfPurchase) {
+        this.dateOfPurchase = dateOfPurchase;
+    }
+
+    public boolean getIsavailable() {
+        return isAvailable;
+    }
+
+    public void setIsavailable(boolean isAvailable) {
+        this.isAvailable = isAvailable;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    // Methods
+    public void checkAvailability() {
+        // TODO: Implement method logic
+    }
+
+    public void getDetails() {
+        // TODO: Implement method logic
+    }
+
+}

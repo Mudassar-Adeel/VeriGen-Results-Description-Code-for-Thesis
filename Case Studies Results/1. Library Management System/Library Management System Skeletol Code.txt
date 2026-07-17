@@ -1,0 +1,383 @@
+=== GeneratedProject ===
+Generated on: 2026-01-06T12:59:13.327Z
+Package Structure: {
+  "com.generated.model": [
+    "User",
+    "Administrator",
+    "Guest",
+    "Librarian",
+    "Member",
+    "Book"
+  ]
+}
+
+
+==================================================
+FILE: User.java
+==================================================
+package com.generated.model;
+
+public class User
+{
+
+    // Attributes
+    private String userId;
+    private String password;
+    private String name;
+
+    // Default constructor
+    public User() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public User(String userId, String password, String name) {
+        this.userId = userId;
+        this.password = password;
+        this.name = name;
+    }
+
+    // Getters and Setters
+    public String getUserid() {
+        return userId;
+    }
+
+    public void setUserid(String userId) {
+        this.userId = userId;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Methods
+    public void login() {
+        // TODO: Implement method logic
+    }
+
+    public void logout() {
+        // TODO: Implement method logic
+    }
+
+    public void viewDetails() {
+        // TODO: Implement method logic
+    }
+
+    public void validateCredentials() {
+        // TODO: Implement method logic
+    }
+
+    public void identifyUserType() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Administrator.java
+==================================================
+package com.generated.model;
+
+public class Administrator extends User
+{
+
+    // Attributes
+    private String adminId;
+
+    // Default constructor
+    public Administrator() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Administrator(String adminId) {
+        this.adminId = adminId;
+    }
+
+    // Getters and Setters
+    public String getAdminid() {
+        return adminId;
+    }
+
+    public void setAdminid(String adminId) {
+        this.adminId = adminId;
+    }
+
+    // Methods
+    public void addMember(Member member) {
+        // TODO: Implement method logic
+    }
+
+    public void removeMember(String memberId, String reason) {
+        // TODO: Implement method logic
+    }
+
+    public void manageMemberDetails(String memberId) {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Guest.java
+==================================================
+package com.generated.model;
+
+public class Guest extends User
+{
+
+    // Default constructor
+    public Guest() {
+        // TODO: Initialize default values
+    }
+    // Methods
+    public void searchBooks(String category) {
+        // TODO: Implement method logic
+    }
+
+    public void viewMembers() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Librarian.java
+==================================================
+package com.generated.model;
+
+public class Librarian extends User
+{
+
+    // Attributes
+    private String employeeId;
+
+    // Default constructor
+    public Librarian() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Librarian(String employeeId) {
+        this.employeeId = employeeId;
+    }
+
+    // Getters and Setters
+    public String getEmployeeid() {
+        return employeeId;
+    }
+
+    public void setEmployeeid(String employeeId) {
+        this.employeeId = employeeId;
+    }
+
+    // Methods
+    public void issueBook(String memberId, String bookId) {
+        // TODO: Implement method logic
+    }
+
+    public void returnBook(String memberId, String bookId) {
+        // TODO: Implement method logic
+    }
+
+    public void addBook(Book book) {
+        // TODO: Implement method logic
+    }
+
+    public void removeBook(String bookId) {
+        // TODO: Implement method logic
+    }
+
+    public void checkBookAvailability(String bookId) {
+        // TODO: Implement method logic
+    }
+
+    public void checkTotalIssuedBooks(String memberId) {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Member.java
+==================================================
+package com.generated.model;
+
+import java.util.Date;
+
+public class Member extends User
+{
+
+    // Attributes
+    private int totalIssuedBooks;
+    private Date dateOfIssue;
+    private Date returnDate;
+    private float fineToBePaid;
+
+    // Default constructor
+    public Member() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Member(int totalIssuedBooks, Date dateOfIssue, Date returnDate, float fineToBePaid) {
+        this.totalIssuedBooks = totalIssuedBooks;
+        this.dateOfIssue = dateOfIssue;
+        this.returnDate = returnDate;
+        this.fineToBePaid = fineToBePaid;
+    }
+
+    // Getters and Setters
+    public int getTotalissuedbooks() {
+        return totalIssuedBooks;
+    }
+
+    public void setTotalissuedbooks(int totalIssuedBooks) {
+        this.totalIssuedBooks = totalIssuedBooks;
+    }
+
+    public Date getDateofissue() {
+        return dateOfIssue;
+    }
+
+    public void setDateofissue(Date dateOfIssue) {
+        this.dateOfIssue = dateOfIssue;
+    }
+
+    public Date getReturndate() {
+        return returnDate;
+    }
+
+    public void setReturndate(Date returnDate) {
+        this.returnDate = returnDate;
+    }
+
+    public float getFinetobepaid() {
+        return fineToBePaid;
+    }
+
+    public void setFinetobepaid(float fineToBePaid) {
+        this.fineToBePaid = fineToBePaid;
+    }
+
+    // Methods
+    public void reservesBook(String bookId) {
+        // TODO: Implement method logic
+    }
+
+    public void searchBooks(String category) {
+        // TODO: Implement method logic
+    }
+
+    public void returnBook(String bookId) {
+        // TODO: Implement method logic
+    }
+
+    public void viewUserDetails() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Book.java
+==================================================
+package com.generated.model;
+
+public class Book
+{
+
+    // Attributes
+    private String bookId;
+    private String title;
+    private String category;
+    private boolean isAvailable;
+
+    // Default constructor
+    public Book() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Book(String bookId, String title, String category, boolean isAvailable) {
+        this.bookId = bookId;
+        this.title = title;
+        this.category = category;
+        this.isAvailable = isAvailable;
+    }
+
+    // Getters and Setters
+    public String getBookid() {
+        return bookId;
+    }
+
+    public void setBookid(String bookId) {
+        this.bookId = bookId;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public boolean getIsavailable() {
+        return isAvailable;
+    }
+
+    public void setIsavailable(boolean isAvailable) {
+        this.isAvailable = isAvailable;
+    }
+
+    // Methods
+    public void checkAvailability() {
+        // TODO: Implement method logic
+    }
+
+    public void retrieveDetails() {
+        // TODO: Implement method logic
+    }
+
+    public void reserve(String memberId) {
+        // TODO: Implement method logic
+    }
+
+    public void cancelReservation(String memberId) {
+        // TODO: Implement method logic
+    }
+
+    public void searchByCategory(String category) {
+        // TODO: Implement method logic
+    }
+
+    public void searchByBookId(String bookId) {
+        // TODO: Implement method logic
+    }
+
+    public void filterBooks(String criteria) {
+        // TODO: Implement method logic
+    }
+
+}

@@ -1,0 +1,526 @@
+=== GeneratedProject ===
+Generated on: 2026-04-19T07:03:29.089Z
+Package Structure: {
+  "com.generated.model": [
+    "Customer",
+    "Supplier",
+    "Authentication",
+    "Catalog",
+    "Item",
+    "ShoppingCart",
+    "Order",
+    "Inventory",
+    "PaymentMethod"
+  ]
+}
+
+
+==================================================
+FILE: Customer.java
+==================================================
+package com.generated.model;
+
+public class Customer
+{
+
+    // Attributes
+    private String loginId;
+    private String password;
+    private String emailAddress;
+    private String shippingAddress;
+
+    // Default constructor
+    public Customer() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Customer(String loginId, String password, String emailAddress, String shippingAddress) {
+        this.loginId = loginId;
+        this.password = password;
+        this.emailAddress = emailAddress;
+        this.shippingAddress = shippingAddress;
+    }
+
+    // Getters and Setters
+    public String getLoginid() {
+        return loginId;
+    }
+
+    public void setLoginid(String loginId) {
+        this.loginId = loginId;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getEmailaddress() {
+        return emailAddress;
+    }
+
+    public void setEmailaddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    public String getShippingaddress() {
+        return shippingAddress;
+    }
+
+    public void setShippingaddress(String shippingAddress) {
+        this.shippingAddress = shippingAddress;
+    }
+
+    // Methods
+    public void login() {
+        // TODO: Implement method logic
+    }
+
+    public void browseCatalog() {
+        // TODO: Implement method logic
+    }
+
+    public void selectPetCategory() {
+        // TODO: Implement method logic
+    }
+
+    public void selectItems() {
+        // TODO: Implement method logic
+    }
+
+    public void addToCart() {
+        // TODO: Implement method logic
+    }
+
+    public void checkout() {
+        // TODO: Implement method logic
+    }
+
+    public void enterShippingAddress() {
+        // TODO: Implement method logic
+    }
+
+    public void selectShippingOption() {
+        // TODO: Implement method logic
+    }
+
+    public void selectPaymentMethod() {
+        // TODO: Implement method logic
+    }
+
+    public void placeOrder() {
+        // TODO: Implement method logic
+    }
+
+    public void checkOrderStatus() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Supplier.java
+==================================================
+package com.generated.model;
+
+public class Supplier
+{
+
+    // Attributes
+    private String loginId;
+    private String password;
+
+    // Default constructor
+    public Supplier() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Supplier(String loginId, String password) {
+        this.loginId = loginId;
+        this.password = password;
+    }
+
+    // Getters and Setters
+    public String getLoginid() {
+        return loginId;
+    }
+
+    public void setLoginid(String loginId) {
+        this.loginId = loginId;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    // Methods
+    public void login() {
+        // TODO: Implement method logic
+    }
+
+    public void checkInventory() {
+        // TODO: Implement method logic
+    }
+
+    public void processDeliveryOrder() {
+        // TODO: Implement method logic
+    }
+
+    public void confirmItemAvailability() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Authentication.java
+==================================================
+package com.generated.model;
+
+public class Authentication
+{
+
+    // Default constructor
+    public Authentication() {
+        // TODO: Initialize default values
+    }
+    // Methods
+    public void validateLogin() {
+        // TODO: Implement method logic
+    }
+
+    public void checkRegistration() {
+        // TODO: Implement method logic
+    }
+
+    public void registerNewUser() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Catalog.java
+==================================================
+package com.generated.model;
+
+public class Catalog
+{
+
+    // Attributes
+    private List<String> categories;
+
+    // Default constructor
+    public Catalog() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Catalog(List<String> categories) {
+        this.categories = categories;
+    }
+
+    // Getters and Setters
+    public List<String> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(List<String> categories) {
+        this.categories = categories;
+    }
+
+    // Methods
+    public void displayCatalog() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Item.java
+==================================================
+package com.generated.model;
+
+public class Item
+{
+
+    // Attributes
+    private String itemName;
+    private Double price;
+    private String petCategory;
+
+    // Default constructor
+    public Item() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Item(String itemName, Double price, String petCategory) {
+        this.itemName = itemName;
+        this.price = price;
+        this.petCategory = petCategory;
+    }
+
+    // Getters and Setters
+    public String getItemname() {
+        return itemName;
+    }
+
+    public void setItemname(String itemName) {
+        this.itemName = itemName;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+    public String getPetcategory() {
+        return petCategory;
+    }
+
+    public void setPetcategory(String petCategory) {
+        this.petCategory = petCategory;
+    }
+
+}
+
+==================================================
+FILE: ShoppingCart.java
+==================================================
+package com.generated.model;
+
+public class ShoppingCart
+{
+
+    // Attributes
+    private List<Item> selectedItems;
+    private Double totalPrice;
+
+    // Default constructor
+    public ShoppingCart() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public ShoppingCart(List<Item> selectedItems, Double totalPrice) {
+        this.selectedItems = selectedItems;
+        this.totalPrice = totalPrice;
+    }
+
+    // Getters and Setters
+    public List<Item> getSelecteditems() {
+        return selectedItems;
+    }
+
+    public void setSelecteditems(List<Item> selectedItems) {
+        this.selectedItems = selectedItems;
+    }
+
+    public Double getTotalprice() {
+        return totalPrice;
+    }
+
+    public void setTotalprice(Double totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
+    // Methods
+    public void addItem() {
+        // TODO: Implement method logic
+    }
+
+    public void calculateTotalPrice() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Order.java
+==================================================
+package com.generated.model;
+
+public class Order
+{
+
+    // Attributes
+    private String orderNumber;
+    private List<Item> items;
+    private Double totalPrice;
+    private String status;
+    private String shippingOption;
+
+    // Default constructor
+    public Order() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Order(String orderNumber, List<Item> items, Double totalPrice, String status, String shippingOption) {
+        this.orderNumber = orderNumber;
+        this.items = items;
+        this.totalPrice = totalPrice;
+        this.status = status;
+        this.shippingOption = shippingOption;
+    }
+
+    // Getters and Setters
+    public String getOrdernumber() {
+        return orderNumber;
+    }
+
+    public void setOrdernumber(String orderNumber) {
+        this.orderNumber = orderNumber;
+    }
+
+    public List<Item> getItems() {
+        return items;
+    }
+
+    public void setItems(List<Item> items) {
+        this.items = items;
+    }
+
+    public Double getTotalprice() {
+        return totalPrice;
+    }
+
+    public void setTotalprice(Double totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getShippingoption() {
+        return shippingOption;
+    }
+
+    public void setShippingoption(String shippingOption) {
+        this.shippingOption = shippingOption;
+    }
+
+    // Methods
+    public void generateConfirmationNumber() {
+        // TODO: Implement method logic
+    }
+
+    public void checkStatus() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: Inventory.java
+==================================================
+package com.generated.model;
+
+public class Inventory
+{
+
+    // Attributes
+    private List<Item> availableItems;
+
+    // Default constructor
+    public Inventory() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public Inventory(List<Item> availableItems) {
+        this.availableItems = availableItems;
+    }
+
+    // Getters and Setters
+    public List<Item> getAvailableitems() {
+        return availableItems;
+    }
+
+    public void setAvailableitems(List<Item> availableItems) {
+        this.availableItems = availableItems;
+    }
+
+    // Methods
+    public void checkItemAvailability() {
+        // TODO: Implement method logic
+    }
+
+    public void reserveItems() {
+        // TODO: Implement method logic
+    }
+
+    public void updateInventory() {
+        // TODO: Implement method logic
+    }
+
+}
+
+==================================================
+FILE: PaymentMethod.java
+==================================================
+package com.generated.model;
+
+public class PaymentMethod
+{
+
+    // Attributes
+    private String cardType;
+    private String cardDetails;
+
+    // Default constructor
+    public PaymentMethod() {
+        // TODO: Initialize default values
+    }
+
+    // Parameterized constructor
+    public PaymentMethod(String cardType, String cardDetails) {
+        this.cardType = cardType;
+        this.cardDetails = cardDetails;
+    }
+
+    // Getters and Setters
+    public String getCardtype() {
+        return cardType;
+    }
+
+    public void setCardtype(String cardType) {
+        this.cardType = cardType;
+    }
+
+    public String getCarddetails() {
+        return cardDetails;
+    }
+
+    public void setCarddetails(String cardDetails) {
+        this.cardDetails = cardDetails;
+    }
+
+    // Methods
+    public void validatePayment() {
+        // TODO: Implement method logic
+    }
+
+    public void processPayment() {
+        // TODO: Implement method logic
+    }
+
+}
